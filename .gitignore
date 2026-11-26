@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+.expo/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+/apps/*/ios/
+/apps/*/android/
+.gradle/
+local.properties
+*.keystore
+!debug.keystore
+.DS_Store
+expo-env.d.ts

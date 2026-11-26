@@ -1,0 +1,8 @@
+coverage
+dist
+build
+.expo
+pnpm-lock.yaml
+expo-env.d.ts
+android
+ios

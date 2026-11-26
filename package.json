@@ -1,0 +1,33 @@
+{
+  "name": "rn-native-showcase",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Small, well-tested React Native native modules written with the Expo Modules API in Kotlin and Swift, plus a demo app that exercises them.",
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify": "bash scripts/verify.sh",
+    "demo": "pnpm --filter @showcase/demo start",
+    "demo:web": "pnpm --filter @showcase/demo web",
+    "prebuild:android": "pnpm --filter @showcase/demo prebuild:android",
+    "test:android": "bash scripts/android-unit-tests.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.19.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "prettier": "^3.6.2",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.48.0"
+  }
+}
